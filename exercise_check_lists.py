@@ -1,15 +1,11 @@
-# Ejercicio 11: Comparar tercer elemento de dos listas
+
 
 def check_lists(lista1, lista2):
-    """
-    Verifica si ambas listas tienen el mismo elemento en la tercera posición.
-    Si alguna de las listas no tiene un tercer elemento, retorna False.
-
-    Args:
-        lista1: Primera lista
-        lista2: Segunda lista
-
-    Returns:
-        True si ambas listas tienen el mismo tercer elemento, False en caso contrario
-    """
-    pass  # Reemplazar con tu implementación
+    if len(lista1) > 2 and len(lista2) > 2:
+        if lista1[2] == lista2[2]:
+            return True
+        else:
+            return False
+    else:
+        return False
+check_lists([0,1,2,3],[4,2,2,4])
